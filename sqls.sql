@@ -12,34 +12,34 @@ EXEC master.dbo.sp_addlinkedserver
 @provstr=N'DRIVER=(MySQL ODBC 8.0 Unicode Driver);SERVER=;PORT=3306;DATABASE=; USER= ;PASSWORD=;OPTION=3;', @catalog=N''
 
 
-EXEC master.dbo.sp_addlinkedsrvlogin @rmtsrvname=N'DS_s57_linuxpl_com', @useself=N'False', @locallogin=NULL, @rmtuser=NULL, @rmtpassword=NULL
+EXEC master.dbo.sp_addlinkedsrvlogin @rmtsrvname=N'', @useself=N'False', @locallogin=NULL, @rmtuser=NULL, @rmtpassword=NULL
 GO
 
-EXEC master.dbo.sp_serveroption @server=N'DS_s57_linuxpl_com', @optname=N'collation compatible', @optvalue=N'false'
+EXEC master.dbo.sp_serveroption @server=N'', @optname=N'collation compatible', @optvalue=N'false'
 GO
-EXEC master.dbo.sp_serveroption @server=N'DS_s57_linuxpl_com', @optname=N'data access', @optvalue=N'true'
+EXEC master.dbo.sp_serveroption @server=N'', @optname=N'data access', @optvalue=N'true'
 GO
-EXEC master.dbo.sp_serveroption @server=N'DS_s57_linuxpl_com', @optname=N'dist', @optvalue=N'false'
+EXEC master.dbo.sp_serveroption @server=N'', @optname=N'dist', @optvalue=N'false'
 GO
-EXEC master.dbo.sp_serveroption @server=N'DS_s57_linuxpl_com', @optname=N'pub', @optvalue=N'false'
+EXEC master.dbo.sp_serveroption @server=N'', @optname=N'pub', @optvalue=N'false'
 GO
-EXEC master.dbo.sp_serveroption @server=N'DS_s57_linuxpl_com', @optname=N'rpc', @optvalue=N'false'
+EXEC master.dbo.sp_serveroption @server=N'', @optname=N'rpc', @optvalue=N'false'
 GO
-EXEC master.dbo.sp_serveroption @server=N'DS_s57_linuxpl_com', @optname=N'rpc out', @optvalue=N'false'
+EXEC master.dbo.sp_serveroption @server=N'', @optname=N'rpc out', @optvalue=N'false'
 GO
-EXEC master.dbo.sp_serveroption @server=N'DS_s57_linuxpl_com', @optname=N'sub', @optvalue=N'false'
+EXEC master.dbo.sp_serveroption @server=N'', @optname=N'sub', @optvalue=N'false'
 GO
-EXEC master.dbo.sp_serveroption @server=N'DS_s57_linuxpl_com', @optname=N'connect timeout', @optvalue=N'0'
+EXEC master.dbo.sp_serveroption @server=N'', @optname=N'connect timeout', @optvalue=N'0'
 GO
-EXEC master.dbo.sp_serveroption @server=N'DS_s57_linuxpl_com', @optname=N'collation name', @optvalue=null
+EXEC master.dbo.sp_serveroption @server=N'', @optname=N'collation name', @optvalue=null
 GO
-EXEC master.dbo.sp_serveroption @server=N'DS_s57_linuxpl_com', @optname=N'lazy schema validation', @optvalue=N'false'
+EXEC master.dbo.sp_serveroption @server=N'', @optname=N'lazy schema validation', @optvalue=N'false'
 GO
-EXEC master.dbo.sp_serveroption @server=N'DS_s57_linuxpl_com', @optname=N'query timeout', @optvalue=N'0'
+EXEC master.dbo.sp_serveroption @server=N'', @optname=N'query timeout', @optvalue=N'0'
 GO
-EXEC master.dbo.sp_serveroption @server=N'DS_s57_linuxpl_com', @optname=N'use remote collation', @optvalue=N'true'
+EXEC master.dbo.sp_serveroption @server=N'', @optname=N'use remote collation', @optvalue=N'true'
 GO
-EXEC master.dbo.sp_serveroption @server=N'DS_s57_linuxpl_com', @optname=N'remote proc transaction promotion', @optvalue=N'true'
+EXEC master.dbo.sp_serveroption @server=N'', @optname=N'remote proc transaction promotion', @optvalue=N'true'
 GO
 
 
